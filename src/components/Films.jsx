@@ -18,7 +18,7 @@ class films extends Component {
                 let filmsData = obj.map((val) => {
                     return <Card key={val.id} title={val.title} secondary={val.description} third={val.director} />;
                 });
-                console.log(filmsData);
+                // console.log(filmsData);
                 this.setState({ filmCards: filmsData });
             });
 
