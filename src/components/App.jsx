@@ -7,7 +7,9 @@ class App extends Component {
         return (
         <Router>
             <Fragment>
-                <h1 className="text-primary">Hello Word!</h1>
+                <Link to='/' className="text-dark" >Go Home</Link>
+                <Link to='/films' className="text-dark" >View Films</Link>
+                <Link to='/people' className="text-dark" >View People</Link>
             </Fragment>
         </Router>
         );
