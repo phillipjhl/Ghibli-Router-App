@@ -20,7 +20,7 @@ function Card(props) {
                     <div className="card-body">
                         <h5 className="card-header text-dark">{props.title}</h5>
                         <p className="card-text">{props.secondary}</p>
-                        <p className="card-text">{props.third}</p>
+                        <p className="card-text">Director: {props.third}</p>
                         <Link to={`/films/${props.id}`} className="btn btn-dark" >Learn More</Link>
                     </div>
                 </div>

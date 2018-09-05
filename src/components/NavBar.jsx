@@ -12,7 +12,7 @@ function NavBar(props) {
                 <div className="navbar-nav">
                     <Link to="/" className="nav-item nav-link" >Home <span className="sr-only">(current)</span></Link>
                     <Link to="/films" className="nav-item nav-link" >View Films</Link>
-                    <Link to="/people" className="nav-item nav-link" >People</Link>
+                    <Link to="/people" className="nav-item nav-link" >View People</Link>
                 </div>
             </div>
         </nav>
