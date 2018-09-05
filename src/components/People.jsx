@@ -16,17 +16,15 @@ class People extends Component {
             .then(obj => {
                 //mapping over recieved array to produce people Card components
                 let peopleData = obj.map((val) => {
-                    return <Card key={val.id} title={val.name} secondary={val.age} third={val.gender} fourth={val.url}/>;
+                    return <Card key={val.id} id={val.id} title={val.name} secondary={val.age} third={val.gender} fourth={val.url}/>;
                 });
-                console.log(peopleData);
                 this.setState({ peopleCards: peopleData });
             });
-
     }
 
     render() {
         return (
-            <div className="container">
+            <div className="card-columns">
             {this.state.peopleCards}
             </div>
         );

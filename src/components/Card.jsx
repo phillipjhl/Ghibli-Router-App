@@ -5,12 +5,12 @@ function Card(props) {
     //if it is a person
     if (props.fourth !== undefined) {
         return (
-                <div className="card border-dark" >
+                <div className="card border-dark mx-2" >
                     <div className="card-body">
                         <h5 className="card-header text-dark">{props.title}</h5>
-                        <p className="card-text">{props.secondary}</p>
-                        <p className="card-text">{props.third}</p>
-                        <a className="btn btn-primary" href={props.fourth} role="button" target="_blank">Link</a>
+                        <p className="card-text">Age: {props.secondary}</p>
+                        <p className="card-text">Gender: {props.third}</p>
+                        <Link to={`/people/${props.id}`} className="btn btn-dark" >Learn More</Link>
                     </div>
                 </div>
         );
