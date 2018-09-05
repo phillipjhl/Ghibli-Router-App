@@ -25,7 +25,7 @@ class Films extends Component {
 
     render() {
         return (
-            <div className="container">
+            <div className="card-columns">
             {this.state.filmCards}
             </div>
         );
