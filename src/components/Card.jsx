@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 function Card(props) {
     //if it is a person
@@ -20,6 +21,9 @@ function Card(props) {
                     <h5 className="card-header text-dark">{props.title}</h5>
                     <p className="card-text">{props.secondary}</p>
                     <p className="card-text">{props.third}</p>
+                    {/* <Router> */}
+                        <Link to={`/films/${props.id}`} className="btn btn-dark" >Learn More</Link>
+                    {/* </Router> */}
                 </div>
             </div>
         );

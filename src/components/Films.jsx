@@ -3,7 +3,7 @@ import 'isomorphic-fetch';
 import 'es6-promise';
 import Card from './Card';
 
-class films extends Component {
+class Films extends Component {
     constructor(props) {
         super(props);
 
@@ -16,9 +16,8 @@ class films extends Component {
             .then(obj => {
                 //mapping over recieved array to produce Film specific Card components
                 let filmsData = obj.map((val) => {
-                    return <Card key={val.id} title={val.title} secondary={val.description} third={val.director} />;
+                    return <Card key={val.id} id={val.id} title={val.title} secondary={val.description} third={val.director} />;
                 });
-                // console.log(filmsData);
                 this.setState({ filmCards: filmsData });
             });
 
@@ -33,4 +32,4 @@ class films extends Component {
     }
 }
 
-export default films;
+export default Films;
