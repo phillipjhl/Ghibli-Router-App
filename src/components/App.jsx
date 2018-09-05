@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Films from './Films';
 import FilmPage from './FilmPage';
 import Home from './Home';
+import NavBar from './NavBar';
 
 class App extends Component {
 
@@ -10,9 +11,7 @@ class App extends Component {
         return (
         <Router>
             <Fragment>
-                <Link to='/' className="text-dark" >Go Home</Link>
-                <Link to='/films' className="text-dark" >View Films</Link>
-                <Link to='/people' className="text-dark" >View People</Link>
+                <NavBar />
                 <Switch>
                     <Route exact path='/' component={Home} />
                     <Route exact path='/films' component={Films} />
