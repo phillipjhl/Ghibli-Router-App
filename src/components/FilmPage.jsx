@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import 'isomorphic-fetch';
 import 'es6-promise';
-import Card from './Card';
+import MoreInfoCard from './MoreInfoCard';
 
 class FilmPage extends Component {
     constructor(props) {

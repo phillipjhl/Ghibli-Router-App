@@ -21,9 +21,7 @@ function Card(props) {
                     <h5 className="card-header text-dark">{props.title}</h5>
                     <p className="card-text">{props.secondary}</p>
                     <p className="card-text">{props.third}</p>
-                    {/* <Router> */}
-                        <Link to={`/films/${props.id}`} className="btn btn-dark" >Learn More</Link>
-                    {/* </Router> */}
+                    <Link to={`/films/${props.id}`} className="btn btn-dark" >Learn More</Link>
                 </div>
             </div>
         );
